@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Love Calculator</title>
+</head>
+<body>
+    <div class="my-div">
+        <h1>Love Calculator &#128151;</h1>
+        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia velit at rerum facilis nihil perferendis ex earum corporis natus illo sequi deleniti quisquam maiores tempore, quasi consequatur vero necessitatibus vitae recusandae inventore ducimus dolorem quae distinctio ab. Voluptates deleniti quas doloremque doloribus, laborum aspernatur saepe, dolores facere nihil non ducimus! Iure eligendi magnam minus sed nemo veniam dolore esse reprehenderit neque? Voluptatum vero recusandae laboriosam quisquam saepe delectus architecto doloribus impedit modi quas. Ullam nostrum odio sint impedit laborum ipsa expedita. Dolor iste totam quos tenetur magnam, voluptatum alias ipsa, aliquid fuga architecto et quam temporibus illum perferendis doloribus natus!</p>
+        <input type="text" name="name1" class="name1" placeholder="Enter you name">
+        <input type="text" name="name2" class="name2" placeholder="Enter partner's name">
+        <button onclick="calculateLove()">Calculate!</button>
+        <label for="percentage" class="percentage" id="percentage" hidden='true'>100%</label>
+    </div>
+<script>
+    function calculateLove(){
+    console.log("Working Fine");
+    var x=Math.random();
+    x=Math.floor(x*100);
+    document.getElementById("percentage").innerHTML=x+'%';
+    document.getElementById('percentage').style.cssText = 'display: flex;width:25%;justify-content: center;align-items: center;margin:0 auto;margin-top: 50px;padding: 10px;font-size: 64px;color:red;';
+}
+</script>
+</body>
+</html></html>
